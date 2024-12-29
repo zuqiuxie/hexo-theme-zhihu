@@ -1,5 +1,5 @@
 title: Markdown Style test
-date: 2018-7-24 23:31:06
+date: 2020-7-24 23:31:06
 tags:
 
 - Foo
@@ -111,13 +111,13 @@ And more text.
 - Unordered sub-list.
 
 1. Actual numbers don't matter, just that it's a number
-1. Ordered sub-list
-1. And another item.
+2. Ordered sub-list
+3. And another item.
 
    You can have properly indented paragraphs within list items. Notice the blank line above, and the leading spaces (at least one, but we'll use three here to also align the raw Markdown).
 
-   To have a line break without a paragraph, you will need to use two trailing spaces.  
-   Note that this line is separate, but within the same paragraph.  
+   To have a line break without a paragraph, you will need to use two trailing spaces.
+   Note that this line is separate, but within the same paragraph.
    (This is contrary to the typical GFM line break behaviour, where trailing spaces are not required.)
 
 - Unordered list can use asterisks
@@ -156,8 +156,8 @@ And more text.
     <dt>Definition list</dt>
     <dd>Is something people use sometimes.</dd>
 
-    <dt>Markdown in HTML</dt>
-    <dd>Does *not* work **very** well. Use HTML <em>tags</em>.</dd>
+    `<dt>`Markdown in HTML`</dt>`
+    `<dd>`Does *not* work **very** well. Use HTML `<em>`tags`</em>`.`</dd>`
 
 </dl>
 
@@ -183,23 +183,19 @@ Some text to show that the reference links can follow later.
 [link text itself]: https://hexo.io/api/
 ```
 
-[I'm an inline-style link](https://www.google.com)
+[I&#39;m an inline-style link](https://www.google.com)
 
-[I'm an inline-style link with title](https://www.google.com "Google's Homepage")
+[I&#39;m an inline-style link with title](https://www.google.com "Google's Homepage")
 
 [I'm a reference-style link][arbitrary case-insensitive reference text]
 
-[I'm a relative reference to a repository file](../blob/master/LICENSE)
+[I&#39;m a relative reference to a repository file](../blob/master/LICENSE)
 
 [You can use numbers for reference-style link definitions][1]
 
-Or leave it empty and use the [link text itself]
+Or leave it empty and use the [link text itself][link text itself]
 
 Some text to show that the reference links can follow later.
-
-[arbitrary case-insensitive reference text]: https://hexo.io
-[1]: https://hexo.io/docs/
-[link text itself]: https://hexo.io/api/
 
 ## Images
 
@@ -224,8 +220,6 @@ Inline-style:
 
 Reference-style:
 ![alt text][logo]
-
-[logo]: https://hexo.io/icon/favicon-196x196.png "Logo Title Text 2"
 
 ## Code and Syntax Highlighting
 
@@ -256,8 +250,8 @@ But let's throw in a <b>tag</b>.
 | Dashes           | `-- is en-dash, --- is em-dash` | -- is en-dash, --- is em-dash |
 ```
 
-|                  | ASCII                           | HTML                          |
-| ---------------- | ------------------------------- | ----------------------------- |
+|                  | ASCII                             | HTML                          |
+| ---------------- | --------------------------------- | ----------------------------- |
 | Single backticks | `'Isn't this fun?'`             | 'Isn't this fun?'             |
 | Quotes           | `"Isn't this fun?"`             | "Isn't this fun?"             |
 | Dashes           | `-- is en-dash, --- is em-dash` | -- is en-dash, --- is em-dash |
@@ -275,8 +269,8 @@ Colons can be used to align columns.
 | Tables        |      Are      | Cool |
 | ------------- | :-----------: | ---: |
 | col 3 is      | right-aligned |      |
-| col 2 is      |   centered    |      |
-| zebra stripes |   are neat    |      |
+| col 2 is      |   centered   |      |
+| zebra stripes |   are neat   |      |
 
 The outer pipes (|) are optional, and you don't need to make the raw Markdown line up prettily. You can also use inline Markdown.
 
@@ -287,10 +281,10 @@ The outer pipes (|) are optional, and you don't need to make the raw Markdown li
 | 1        | 2         | 3          |
 ```
 
-| Markdown | Less      | Pretty     |
-| -------- | --------- | ---------- |
-| _Still_  | `renders` | **nicely** |
-| 1        | 2         | 3          |
+| Markdown  | Less        | Pretty           |
+| --------- | ----------- | ---------------- |
+| _Still_ | `renders` | **nicely** |
+| 1         | 2           | 3                |
 
 > You can find more information about **LaTeX** mathematical expressions [here](https://math.meta.stackexchange.com/questions/5020/mathjax-basic-tutorial-and-quick-reference).
 
@@ -387,10 +381,15 @@ Pure markdown version:
 [![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/ARted4RniaU/0.jpg)](https://www.youtube.com/watch?v=ARted4RniaU)
 ```
 
-<a href="https://www.youtube.com/watch?feature=player_embedded&v=ARted4RniaU
+`<a href="https://www.youtube.com/watch?feature=player_embedded&v=ARted4RniaU
 " target="_blank"><img src="https://img.youtube.com/vi/ARted4RniaU/0.jpg"
-alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>
+alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" />``</a>`
 
 Pure markdown version:
 
-[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/ARted4RniaU/0.jpg)](https://www.youtube.com/watch?v=ARted4RniaU)
+[IMAGE ALT TEXT HERE](https://www.youtube.com/watch?v=ARted4RniaU)
+
+[arbitrary case-insensitive reference text]: https://hexo.io
+[1]: https://hexo.io/docs/
+[link text itself]: https://hexo.io/api/
+[logo]: https://hexo.io/icon/favicon-196x196.png

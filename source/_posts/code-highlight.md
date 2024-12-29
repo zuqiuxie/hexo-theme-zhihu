@@ -1,9 +1,8 @@
 ---
-title: Code Highlight Style test
+title: Code Highlight Style test123
 date: 2019-07-25 16:43:00
 tags:
 ---
-
 Make sure all the code blocks highlighted correctly. All the code samples are come from the demo of https://highlightjs.org
 
 <!-- more -->
